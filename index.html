@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Resources/images/icon-star.svg">
+    <link rel="stylesheet" href="./style.css">
+    <title>Interactive rating component</title>
+</head>
+
+<body>
+
+    <main id="Interactive-rating">
+
+        <div class="Ir__Icon">
+            <img src="./Resources/images/icon-star.svg" alt="" class="Icon__Star">
+        </div>
+        <h1 class="Ir__title">How did we do?</h1>
+        <p class="Ir__suggestion">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="Ir__Evaluation-option-list">
+            <span class="Evaluation-option-list__option">
+                <input type="radio" name="1" id="1" value="1">
+                <label for="1">1</label>
+            </span>
+
+            <span class="Evaluation-option-list__option">
+                <input type="radio" name="2" id="2" value="2">
+                <label for="2">2</label>
+            </span>
+
+            <span class="Evaluation-option-list__option">
+                <input type="radio" name="3" id="3" value="3">
+                <label for="3">3</label>
+            </span>
+
+            <span class="Evaluation-option-list__option">
+                <input type="radio" name="4" id="4" value="4">
+                <label for="4">4</label>
+            </span>
+
+            <span class="Evaluation-option-list__option">
+                <input type="radio" name="5" id="5" value="5">
+                <label for="5">5</label>
+            </span>
+        </div>
+
+        <button class="Ir__Submit-btn" type="submit">Submit</button>
+
+    </main>
+
+    <div class="thank-you-state">
+        <img src="./Resources/images/illustration-thank-you.svg" alt="" class="thank-you-state__image">
+        <div class="thank-you-state__Result">You selected <span class="Result__rating">3</span> out of 5</div>
+        <h1 class="thank-you-state__title">Thank you!</h1>
+        <p class="thank-you-state__content">We appreciate you taking the time to give a rating.<br> If you ever need more support, don't hesitate to <br>get in touch!
+        </p>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

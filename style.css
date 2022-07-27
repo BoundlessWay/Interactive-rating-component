@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --primary-orange: hsl(25, 97%, 53%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Light-Grey: hsl(217, 12%, 63%);
+    --neutral-Medium-Grey: hsl(216, 12%, 54%);
+    --neutral-Dark-Blue: hsl(213, 19%, 18%);
+    --neutral-Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    background-color: var(--neutral-Very-Dark-Blue);
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#Interactive-rating {
+    width: 412px;
+    background-color: var(--neutral-Dark-Blue);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 32px;
+}
+
+.Ir__Icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 26%);
+}
+
+.Icon__Star {
+    margin: auto;
+}
+
+.Ir__title {
+    color: var(--neutral-White);
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.Ir__suggestion {
+    color: var(--neutral-Medium-Grey);
+    margin-top: 12px;
+    line-height: 22px;
+}
+
+.Ir__Evaluation-option-list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Evaluation-option-list__option {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 26%);
+    color: var(--neutral-Medium-Grey);
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.Evaluation-option-list__option:hover {
+    color: var(--neutral-White);
+    background-color: var(--neutral-Light-Grey);
+    cursor: pointer;
+}
+
+.Evaluation-option-list__option:active {
+    background-color: var(--primary-orange);
+}
+
+.option--selected {
+    background-color: var(--neutral-Light-Grey);
+    color: var(--neutral-White);
+}
+
+.Evaluation-option-list__option>input {
+    display: none;
+}
+
+.Evaluation-option-list__option>label {
+    margin: auto;
+    font-weight: 700;
+    padding: auto;
+}
+
+.Ir__Submit-btn {
+    margin-top: 24px;
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary-orange);
+    color: var(--neutral-White);
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.thank-you-state {
+    display: none;
+    width: 412px;
+    background-color: var(--neutral-Dark-Blue);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-state__image {}
+
+.thank-you-state__Result {
+    color: var(--primary-orange);
+    background-color: hsl(216, 12%, 26%);
+    width: 180px;
+    margin-top: 32px;
+    height: 30px;
+    border-radius: 20px;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 30px;
+}
+
+.thank-you-state__title {
+    color: var(--neutral-White);
+    margin-top: 32px;
+    font-weight: 400;
+}
+
+.thank-you-state__content {
+    margin: 12px 0;
+    color: var(--neutral-Medium-Grey);
+    text-align: center;
+}
